@@ -179,10 +179,11 @@ class EleveController extends Controller
         $eleve = Eleve::find($id);
         if($eleve)
         {
+            $eleve->delete();
             return response()->json([
-                'status' => 404,
+                'status' => 200,
                 'message' => " L'élève a été supprimé avec succès"
-            ], 404);
+            ], 200);
 
         }else
         {

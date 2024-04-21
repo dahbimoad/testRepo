@@ -27,4 +27,7 @@ Route::get('eleves/{id}', [EleveController::class, 'show']);
 Route::get('eleves/{id}/edit', [EleveController::class, 'edit']);
 Route::put('eleves/{id}/edit', [EleveController::class, 'update']);
 Route::delete('eleves/{eleve}/delete', [EleveController::class, 'destroy']);
+
+
+
  
