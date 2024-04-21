@@ -9,7 +9,7 @@ class Eleve extends Model
 {
     use HasFactory;
     protected $table = 'eleves';
-    protected $fillable = ['name', 'grade', 'email', 'phone'];
+    protected $fillable = ['name', 'grade', 'email', 'phone','password'];
 
 
 
